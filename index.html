@@ -1,0 +1,123 @@
+<!doctype html>
+
+<html>
+<head>
+    <title>Yuri Zhuravel</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway:300">
+
+    <!-- Latest compiled and minified Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+    <style>
+
+      body {
+    		color:#424242;
+    		font-family:"Raleway", Trebuchet MS, Arial, Helvetica, sans-serif;
+      }
+
+    	#myName {
+        font-size:2.5em;
+        text-align:center;
+        padding:2.5em 0;
+        font-weight:400;
+      }
+
+      #links {
+        font-size:1.6em;
+        text-align:center;
+      }
+
+      #about {
+        width:290px;
+        margin:0 auto;
+        padding-top:40px;
+        text-align:justify;
+        font-size:1.2em;
+      }
+
+    	a {
+        text-decoration:none;
+        color:#424242;
+    	}
+
+    	a:hover {
+        text-decoration:underline;
+        color:#424242;
+    	}
+
+    </style>
+
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="row" id="myName">
+      <div class "col-md-12">
+			     YURI Zhuravel
+      </div>
+    </div>
+
+    <div class="row" id="links">
+
+      <div class="col-sm-3" id="aboutButton">
+        about
+      </div>
+      <div class="col-sm-3">
+        <a href="https://www.linkedin.com/in/yurizhuravel">linkedin</a>
+    	</div>
+      <div class="col-sm-3">
+        <a href="https://www.instagram.com/yurizhuravel">instagram</a></li>
+      </div>
+      <div class="col-sm-3">
+        <a href="http://zhuravel.co.uk/blog">blog</a>
+      </div>
+
+    </div>
+
+    <div id="about">
+
+          I'm a London-based web developer with professional background in broadcasting, online and video news production, and PR.<br /><br />My past employers include BBC World Service and a Formula One team.<br /><br />I've started coding because I wanted not only to edit websites but to be able to build them from scratch.
+
+    </div>
+
+  </div>
+
+	<script>
+
+    $("a, #aboutButton").hover(function() {
+
+			$(this).animate({
+				fontSize:"1.2em",
+			}, 100);
+
+		}, function() {
+
+			$(this).animate({
+				fontSize:"1em",
+			}, 100);
+
+		});
+
+    $(document).ready(function(){
+
+      $("#about").hide();
+
+    });
+
+    $("#aboutButton").hover(function() {
+
+      $("#about").slideToggle();
+
+    });
+
+	</script>
+</body>
+</html>

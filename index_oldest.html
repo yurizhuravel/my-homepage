@@ -1,0 +1,136 @@
+<!doctype html>
+
+<html>
+<head>
+    <title>Yuri Zhuravel</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway:300">
+
+    <!-- Latest compiled and minified Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+    <style>
+
+      body {
+    		color:#424242;
+    		font-family:"Raleway", Trebuchet MS, Arial, Helvetica, sans-serif;
+      }
+
+      .break {
+        clear:both;
+      }
+
+    	#myName {
+        width:500px;
+        margin: 0 auto;
+        font-size:2.5em;
+        text-align: center;
+        padding:1.2em 0;
+      }
+
+      #links {
+        width:500px;
+        margin:0 auto;
+        font-size:1.5em;
+        padding:0;
+      }
+
+      #about {
+        width:400px;
+        margin:0 auto;
+        padding-top:40px;
+        text-align: justify;
+        position:relative;
+        left:8px;
+      }
+
+    	ul {
+        list-style:none;
+      }
+
+    	li {
+        float:left;
+        margin:0;
+        padding:0 15px;
+    	}
+
+    	li a {
+        text-decoration:none;
+        color:#424242;
+    	}
+
+    	li a:hover {
+        text-decoration:underline;
+    	}
+
+    </style>
+
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="row" id="myName">
+      <div class "col-xs-12 col-md-8">
+			<p>YURI Zhuravel</p>
+    </div>
+    </div>
+
+    <div class="row" id="links">
+
+      <ul>
+        <li><a href="http://zhuravel.co.uk/blog">blog</a></li>
+        <li><a href="https://www.linkedin.com/in/yurizhuravel">linkedin</a></li>
+    	  <li><a href="https://www.instagram.com/yurizhuravel">instagram</a></li>
+        <li id="aboutButton">about</li>
+      </ul>
+
+    </div>
+
+    <div class="break"></div>
+
+    <div id="about">
+
+          I'm a London-based web developer with professional background in broadcasting, online and video news production, and PR.<br /><br />My past employers include BBC World Service and a Formula One team.<br /><br />I've started coding because I wanted not only to edit websites but to be able to build them from scratch.
+
+    </div>
+
+  </div>
+
+	<script>
+
+    $("li").hover(function() {
+
+			$(this).animate({
+				fontSize:"1.2em",
+			}, 100);
+
+		}, function() {
+
+			$(this).animate({
+				fontSize:"1em",
+			}, 100);
+
+		});
+
+    $(document).ready(function(){
+
+      $("#about").hide();
+
+    });
+
+    $("#aboutButton").hover(function() {
+
+      $("#about").slideToggle();
+
+    });
+
+	</script>
+</body>
+</html>
