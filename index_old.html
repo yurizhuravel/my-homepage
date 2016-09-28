@@ -1,0 +1,110 @@
+<!doctype html>
+
+<html>
+<head>
+    <title>Yuri Zhuravel</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway:300">
+    
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    
+    <style>
+    
+    	body {
+    		color:#424242;    		
+    		font-family:"Raleway", Trebuchet MS, Arial, Helvetica, sans-serif;
+    		font-size:2.5em;
+    	}
+    	
+    	.fixedWidth {	
+    		width:300px;
+    		margin:0 auto;    	
+    	}
+    	
+    	#myName {
+    		text-align:center;
+    		padding:2em 16px 2em 0;
+    	}
+    	
+    	p {
+    		padding:0;
+    		margin:0;
+    	}
+    	
+    	ul {
+     		list-style:none;
+    		font-size:0.5em;
+    		padding:0;
+    		margin:0;
+      	}
+    	
+    	li {
+    		float:left;
+    		margin:0;
+    		padding:0 8px 0 18px;
+    	}
+    	
+    	li a {
+    		text-decoration:none;
+    		color:#424242;	
+    	}
+    	
+    	li a:hover {
+    		text-decoration:underline;
+    	}
+      	
+    </style>
+         
+</head>
+
+<body>
+	<div id="container">
+		
+		<div id="myName">
+		
+			<div class="fixedWidth">
+		
+    		<p>YURI Zhuravel</p>
+    		
+    		</div>
+    		
+    	</div>
+    	
+    	<div id="links">
+    	
+    		<div class="fixedWidth">
+    	
+    			<ul>
+    			<li><a href="https://www.linkedin.com/in/yurizhuravel">linkedin</a></li>
+    			<li><a href="http://zhuravel.co.uk/blog">blog</a></li>
+    			<li><a href="https://www.instagram.com/yurizhuravel">instagram</a></li>
+    			</ul>
+			
+			</div>
+		</div>	
+		    	
+	</div>
+	
+	<script>
+		
+		$("li").hover(function() {
+		
+			$(this).animate({
+				fontSize:"1.2em",
+			}, 100);
+			
+		}, function() {
+		
+			$(this).animate({
+				fontSize:"1em",
+			}, 100);
+			
+		});
+	
+	</script>
+</body>
+</html>
